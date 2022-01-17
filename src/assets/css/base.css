@@ -1,0 +1,73 @@
+/* Clear the inside and outside margins of all our labels */
+* {
+  margin: 0;
+  padding: 0
+}
+body,html{
+  box-sizing: border-box;
+}
+/* Em and I italics do not slant */
+em,
+i {
+  font-style: normal
+}
+/* Get rid of Li's dots*/
+li {
+  list-style: none
+}
+
+img {
+  /* Border 0 takes care of the issue that older browsers have borders around images that contain links */
+  border: 0;
+  /* Remove the problem of having a gap at the bottom of the image */
+  vertical-align: middle
+}
+
+button {
+  /* When we mouse over the button button, the mouse becomes a small hand */
+  cursor: pointer
+}
+
+a {
+  color: #666;
+  text-decoration: none
+}
+
+a:hover {
+  color: #c81623
+}
+
+button,
+input {
+  /* "\5B8B\4F53" "Song Style" means "song style" for better browser compatibility */
+  font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+  outline: none;
+  border: none;
+}
+
+body {
+  /* CSS3 Anti - aliasing makes text display clearer */
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  font-size: 13px;
+  font-family: BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  color: #666;
+  
+}
+
+.hide,
+.none {
+  display: none
+}
+/* Remove the floating */
+.clearfix:after {
+  visibility: hidden;
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0
+}
+
+.clearfix {
+  *zoom: 1
+}
